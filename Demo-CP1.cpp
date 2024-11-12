@@ -25,7 +25,14 @@
 
 */
 
+// Demo Project
 // Collect Grade of student in 5 subjects and display average with their name
+
+// Activity projects
+// 1. Collect names and age of visitors of resort, based on their age provide them their required payment(Levels: Kids, Adult, Senior). payment should check if they input enoung
+// 2. Sari Sari Store System, user can pick as much as they can and compute their total amount to be payed and add their name in receipt
+// 3. Compute the total clients entering a park per group then providing them a name for their group for payment. if not payed enough they can't enter and will entertain other user
+// 4. User can compute the salary of their worker per hour, inputing their salary per hour and their time of work, a additional bonus if they are working night shift (x1.5), early morning shift (x1.8)
 
 #include "pch.h"
 #include <iostream>
