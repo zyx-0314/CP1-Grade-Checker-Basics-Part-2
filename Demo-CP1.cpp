@@ -103,16 +103,20 @@ void ComputeGrade(float& average) {
     // 3. it will loop until the i is more than the set value of MAX
 	for (int i = 0; i < MAX; i++)
 	{
-        // 1. prompt the user 
-            // the first part i + 1 is used to provide number indication to user in human number counting
-		std::cout << i + 1 << " Input Grade: ";
-		std::cin >> input;
+        do
+        {
+            // 1. prompt the user 
+                // the first part i + 1 is used to provide number indication to user in human number counting
+            std::cout << i + 1 << " Input Grade (0 -100): ";
+            std::cin >> input;
+            // 2. if input is not 0 - 100 it will loop
+        } while(100 < input || 0 > input)
 
-        // 2. after input it will then be automatically added to the total
+        // 3. after input it will then be automatically added to the total
 		total += input;
 	}
 
-    // it will do the computation of average
+    // 4. it will do the computation of average
 	average = total / MAX;
 }
 
